@@ -6,8 +6,6 @@ func _ready():
 	await $covers/AnimationPlayer.animation_finished
 	$covers.hide()
 
-
-
 func _on_start_pressed():
 	pass # Replace with function body.
 
@@ -20,7 +18,7 @@ func _on_start_mouse_exited():
 
 
 func _on_options_pressed():
-	pass
+	$settings_screen.show()
 
 func _on_options_mouse_entered():
 	$options/icon.show()
